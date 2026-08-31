@@ -33,14 +33,3 @@ class UserModel {
   }
 }
 
-void main() {
-  Map jsonResponse = {'name': 'Budi Santoso', 'age': 22};
-
-  UserModel user = UserModel.fromJson(jsonResponse);
-
-  print('nama: ${user.name}');
-  print('ID: ${user.id}');
-  print('Status: ${user.isActive}');
-
-  print('to JSON: ${user.toJson()}');
-}

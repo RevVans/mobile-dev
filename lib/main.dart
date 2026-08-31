@@ -1,6 +1,18 @@
 import 'package:flutter/material.dart';
 
+import 'models/user_model1.dart';
+
 void main() {
+  Map jsonResponse = {'name': 'Budi Santoso', 'age': 22};
+
+  UserModel user = UserModel.fromJson(jsonResponse);
+
+  print('nama: ${user.name}');
+  print('ID: ${user.id}');
+  print('Status: ${user.isActive}');
+
+  print('to JSON: ${user.toJson()}');
+
   runApp(const MyApp());
 }
 
