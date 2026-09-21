@@ -1,17 +1,17 @@
-# tugas_pertama
+## Tugas Mobile Development
 
-A new Flutter project.
+| Branch | Detail |
+| ----------- | ----------- |
+| main | Technical Code Dart & FLutter |
+| routing-and-navigation | Routing and Navigation |
 
-## Getting Started
+Untuk menjalankan aplikasi:
+1. Clone repository ini.
+2. Di terminal, jalankan `flutter pub get` untuk mendapatkan dependencies.
+3. Jalankan aplikasi dengan `flutter run`.
 
-This project is a starting point for a Flutter application.
+Aplikasi ini berjalan secara mandiri sebagai aplikasi client-side murni dengan data in-memory/mock model. Jika diintegrasikan ke backend:
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Pastikan server MySQL lokal (seperti XAMPP/Laragon) aktif di port default 3306.
+2. Impor berkas skema database schema.sql melalui phpMyAdmin.
+3. Jalankan server API lokal dan sesuaikan URL endpoint pada konfigurasi HTTP client di aplikasi.
